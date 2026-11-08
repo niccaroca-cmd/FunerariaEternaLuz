@@ -1,0 +1,22 @@
+[
+  {
+    "cementerio": "Cementerio Parque",
+    "tipoSepultura": "Nicho",
+    "costoSepultura": 400000.0,
+    "codigoServicio": "S001",
+    "descripcion": "Servicio funerario de sepultura",
+    "fechaServicio": "2026-11-10",
+    "precioBase": 250000.0,
+    "tipo": "sepultura"
+  },
+  {
+    "crematorio": "Crematorio Santiago",
+    "tipoUrna": "Urna de madera",
+    "costoCremacion": 350000.0,
+    "codigoServicio": "C001",
+    "descripcion": "Servicio funerario de cremacion",
+    "fechaServicio": "2026-11-12",
+    "precioBase": 200000.0,
+    "tipo": "cremacion"
+  }
+]

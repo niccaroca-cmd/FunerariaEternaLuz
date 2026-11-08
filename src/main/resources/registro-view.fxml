@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cl.eternaluz.controller.RegistroController">
+
+
+    <top>
+        <VBox alignment="CENTER" spacing="8"
+              style="-fx-background-color: #263746; -fx-padding: 20;">
+            <Label text="REGISTRAR SERVICIO"
+                   style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Label text="Eterna Luz - Servicios Funerarios"
+                   style="-fx-text-fill: white;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="12"
+              style="-fx-padding: 25;">
+
+            <GridPane hgap="12" vgap="12">
+                <Label text="Código:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtCodigo" promptText="Ej: S001"
+                           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Descripción:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtDescripcion"
+                           GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Fecha del servicio:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtFecha" promptText="DD-MM-AAAA"
+                           GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Precio base:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtPrecioBase"
+                           GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                <Label text="Tipo de servicio:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="cbTipoServicio" prefWidth="200"
+                          GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            </GridPane>
+
+            <Separator/>
+
+            <Label text="Datos específicos del servicio"
+                   style="-fx-font-weight: bold; -fx-font-size: 16px;"/>
+
+            <GridPane hgap="12" vgap="12">
+                <Label text="Cementerio / Crematorio:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtLugar"
+                           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Tipo de sepultura / urna:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtTipo"
+                           GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Costo adicional:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtCostoAdicional"
+                           GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            </GridPane>
+
+            <HBox alignment="CENTER" spacing="15">
+                <Button text="Guardar servicio"
+                        onAction="#guardarServicio"/>
+
+                <Button text="Volver"
+                        onAction="#volver"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

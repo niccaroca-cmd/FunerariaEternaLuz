@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cl.eternaluz.controller.FamiliarController">
+
+    <top>
+        <VBox alignment="CENTER" spacing="8"
+              style="-fx-background-color: #263746; -fx-padding: 25;">
+
+            <Label text="ETERNA LUZ"
+                   style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+            <Label text="Atención a familiares"
+                   style="-fx-font-size: 17px; -fx-text-fill: white;"/>
+
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20"
+              style="-fx-padding: 35;">
+
+            <Label text="¿Qué servicio necesitas?"
+                   style="-fx-font-size: 23px; -fx-font-weight: bold;"/>
+
+            <Label text="Selecciona una de las siguientes alternativas."
+                   style="-fx-font-size: 14px; -fx-text-fill: gray;"/>
+
+            <Button text="SERVICIO DE SEPULTURA"
+                    prefWidth="300" prefHeight="65"
+                    onAction="#seleccionarSepultura"
+                    style="-fx-font-size: 16px; -fx-background-color: #263746; -fx-text-fill: white;"/>
+
+            <Button text="SERVICIO DE CREMACIÓN"
+                    prefWidth="300" prefHeight="65"
+                    onAction="#seleccionarCremacion"
+                    style="-fx-font-size: 16px; -fx-background-color: #526777; -fx-text-fill: white;"/>
+
+            <Button text="Volver al inicio"
+                    prefWidth="180"
+                    onAction="#volverInicio"/>
+
+        </VBox>
+    </center>
+
+    <bottom>
+        <Label text="Eterna Luz - Estamos para acompañarte"
+               BorderPane.alignment="CENTER"
+               style="-fx-padding: 15; -fx-text-fill: gray;"/>
+    </bottom>
+
+</BorderPane>

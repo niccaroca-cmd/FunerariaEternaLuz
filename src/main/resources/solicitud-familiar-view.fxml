@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cl.eternaluz.controller.SolicitudFamiliarController">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10"
+              style="-fx-background-color: #263746; -fx-padding: 20;">
+            <Label text="ETERNA LUZ"
+                   style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Label text="Solicitud de servicio funerario"
+                   style="-fx-font-size: 17px; -fx-text-fill: white;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true"
+                    pannable="true"
+                    vbarPolicy="AS_NEEDED"
+                    prefViewportHeight="650">
+            <content>
+                <VBox spacing="12"
+                      fillWidth="true"
+                      style="-fx-padding: 25;">
+
+                    <Label text="Datos del fallecido"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+                    <Label text="Nombre completo:"/>
+                    <TextField fx:id="txtNombreFallecido"
+                               promptText="Nombre y apellido"/>
+
+                    <Label text="RUT:"/>
+                    <TextField fx:id="txtRutFallecido"
+                               promptText="12.345.678-9"/>
+
+                    <Label text="Fecha de fallecimiento:"/>
+                    <TextField fx:id="txtFechaFallecimiento"
+                               promptText="DD-MM-AAAA"/>
+
+                    <Label text="Lugar de fallecimiento:"/>
+                    <TextField fx:id="txtLugarFallecimiento"/>
+
+                    <Separator/>
+
+                    <Label text="Datos del familiar responsable"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+                    <Label text="Nombre completo:"/>
+                    <TextField fx:id="txtNombreFamiliar"/>
+
+                    <Label text="RUT:"/>
+                    <TextField fx:id="txtRutFamiliar"
+                               promptText="12.345.678-9"/>
+
+                    <Label text="Teléfono:"/>
+                    <TextField fx:id="txtTelefono"
+                               promptText="+56 9 1234 5678"/>
+
+                    <Label text="Correo electrónico:"/>
+                    <TextField fx:id="txtEmail"/>
+
+                    <Label text="Dirección:"/>
+                    <TextField fx:id="txtDireccion"/>
+
+                    <Separator/>
+
+                    <Label text="Servicio seleccionado:"
+                           style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+                    <Label fx:id="lblTipoServicio"
+                           text="Tipo de servicio"
+                           style="-fx-font-size: 16px; -fx-text-fill: #263746;"/>
+
+                    <HBox alignment="CENTER" spacing="12">
+                        <Button text="Solicitar cotización"
+                                onAction="#solicitarServicio"
+                                style="-fx-background-color: #263746; -fx-text-fill: white; -fx-padding: 10 18;"/>
+                        <Button text="Volver"
+                                onAction="#volver"
+                                style="-fx-padding: 10 18;"/>
+                    </HBox>
+
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <Label text="Eterna Luz - Estamos para acompañarte"
+               BorderPane.alignment="CENTER"
+               style="-fx-padding: 12; -fx-text-fill: gray;"/>
+    </bottom>
+
+</BorderPane>

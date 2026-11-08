@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cl.eternaluz.controller.MainController">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10"
+              style="-fx-background-color: #263746; -fx-padding: 35;">
+
+            <Label text="ETERNA LUZ"
+                   style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+            <Label text="Servicios Funerarios"
+                   style="-fx-font-size: 18px; -fx-text-fill: white;"/>
+
+            <Label text="Estamos aquí para acompañarte y ayudarte."
+                   style="-fx-font-size: 14px; -fx-text-fill: white;"/>
+
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="25"
+              style="-fx-padding: 40;">
+
+            <Label text="Bienvenido a Eterna Luz"
+                   style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+            <Label text="¿Cómo deseas ingresar?"
+                   style="-fx-font-size: 16px;"/>
+
+            <Button text="SOY FAMILIAR"
+                    prefWidth="280" prefHeight="60"
+                    onAction="#ingresarFamiliar"
+                    style="-fx-font-size: 16px; -fx-background-color: #263746; -fx-text-fill: white;"/>
+
+            <Label text="Solicitar un servicio funerario"
+                   style="-fx-text-fill: gray;"/>
+
+            <Button text="SOY TRABAJADOR DE ETERNA LUZ"
+                    prefWidth="280" prefHeight="60"
+                    onAction="#ingresarTrabajador"
+                    style="-fx-font-size: 14px; -fx-background-color: #526777; -fx-text-fill: white;"/>
+
+            <Label text="Administrar servicios y solicitudes"
+                   style="-fx-text-fill: gray;"/>
+
+        </VBox>
+    </center>
+
+    <bottom>
+        <Label text="Eterna Luz - Siempre acompañando a tu familia"
+               BorderPane.alignment="CENTER"
+               style="-fx-padding: 18; -fx-text-fill: gray;"/>
+    </bottom>
+
+</BorderPane>
